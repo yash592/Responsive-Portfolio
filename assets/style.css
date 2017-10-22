@@ -238,22 +238,33 @@ input[type=submit] {
   border: 0 none;
 }
 
+body {
+  height: 100%;
+}
+
+.wrapper {
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto -105px;
+}
+
+footer,
+.push {
+  height: 105px;
+}
+
 @media screen and (max-width: 980px){
 
   .container {
     max-width: 800px;
   }
 
-#masthead {
-  position: fixed;
-  width: 100%;
-  z-index: 99;
-  color: #fff;
-  background: #fff;
-}
+
 
 .main-section {
   width:60%;
+  border-radius: 20px;
 }
 
 .work{
@@ -275,8 +286,130 @@ h1{
   text-align: center;
 }
 
+.auth-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+}
+
+.sidebar {
+  border-radius: 20px;
+}
+
+input[type=submit] {
+  border-radius: 15px;
+}
 
 }
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    max-width: 700px;
+  }
+
+  .main-section {
+    width: 100%;
+    max-width: none;
+    border-radius: 20px;
+  }
+
+  .sidebar {
+  width: 100%;
+  max-width: none;
+  
+}
+
+#connect {
+  width: 100%;
+  text-align: center;
+}
+
+.work {
+    position: relative;
+    float: left;
+    width: 90%;
+    margin: 2px 0 25px 33px;
+    overflow: auto;
+}
+
+h2{
+  text-align: center;
+}
+
+.social {
+  align-content: center;
+  width: 100px;
+  height: 100px;
+}
+
+h1,h2, h3 {
+  font-family: 'Ubuntu', sans-serif;
+  color: black;
+  font-weight: bold;
+
+}
+
+@media screen  and (max-width: 640px) {
+
+  .container {
+    max-width: 640px;
+  }
+
+  #logo {
+    width: 100%;
+  }
+
+  #masthead {
+    position: fixed;
+    width: 100%;
+    margin: 0px 0 30px;
+    padding-bottom: 20px;
+    overflow: auto;
+    color: #fff;
+    background: #fff;
+    border-bottom: 2px solid #ccc;
+}
+
+  .main-section {
+    width: 95%;
+    margin: 16px;
+  }
+
+  work {
+    position: relative;
+    float: left;
+    width: 89%;
+    margin: 2px 0px 23px 31px;
+    overflow: auto;
+}
+
+  nav {
+    float: left;
+    margin-top: 23px;
+    margin-left: 147px;
+}
+
+#main-container {
+    padding-top: 175px;
+}
+
+.sidebar {
+  width: 95%;
+  max-width: none;
+  margin: 16px;
+  
+}
+
+#connect {
+  width: 95%;
+  text-align: center;
+
+
+}
+
+  
+
 
   
 
